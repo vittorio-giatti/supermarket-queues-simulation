@@ -1,0 +1,365 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 355536 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=8760, tid=7484
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_66-b17) (build 1.8.0_66-b17)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.66-b17 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001df4e800):  JavaThread "C2 CompilerThread2" daemon [_thread_in_native, id=7484, stack(0x000000001e710000,0x000000001e810000)]
+
+Stack: [0x000000001e710000,0x000000001e810000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2: 140976 6138       4       com.anylogic.engine.presentation.ShapeControl::draw (18 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000020bd9000 JavaThread "Xj3D Content Loader" [_thread_blocked, id=8884, stack(0x0000000038bc0000,0x0000000038cc0000)]
+  0x0000000020bda800 JavaThread "Xj3D Content Loader" [_thread_blocked, id=8624, stack(0x0000000038ac0000,0x0000000038bc0000)]
+  0x0000000020bd7000 JavaThread "Xj3D Content Loader" [_thread_blocked, id=4044, stack(0x00000000389c0000,0x0000000038ac0000)]
+  0x0000000020bda000 JavaThread "Xj3D Content Loader" [_thread_blocked, id=6340, stack(0x00000000388c0000,0x00000000389c0000)]
+  0x0000000020bd6000 JavaThread "Xj3D Content Loader" [_thread_blocked, id=8660, stack(0x00000000387c0000,0x00000000388c0000)]
+  0x0000000020bd7800 JavaThread "Xj3D Content Loader" [_thread_blocked, id=5044, stack(0x00000000386c0000,0x00000000387c0000)]
+  0x0000000020bd8800 JavaThread "Xj3D Content Loader" [_thread_blocked, id=1496, stack(0x00000000385c0000,0x00000000386c0000)]
+  0x0000000020bd5800 JavaThread "AV3D Runtime" [_thread_in_Java, id=8084, stack(0x00000000254e0000,0x00000000255e0000)]
+  0x0000000020576800 JavaThread "Thread di esecuzione modello AnyLogic" daemon [_thread_blocked, id=3172, stack(0x00000000225c0000,0x00000000226c0000)]
+  0x000000001f2f7000 JavaThread "TimerQueue" daemon [_thread_blocked, id=8172, stack(0x00000000222c0000,0x00000000223c0000)]
+  0x000000001f3fc800 JavaThread "AnyLogic presentation frame manager" daemon [_thread_blocked, id=1044, stack(0x00000000221c0000,0x00000000222c0000)]
+  0x0000000002214800 JavaThread "DestroyJavaVM" [_thread_blocked, id=8748, stack(0x0000000002110000,0x0000000002210000)]
+  0x0000000020435800 JavaThread "AnyLogic simulation performance monitor" [_thread_blocked, id=1512, stack(0x00000000220c0000,0x00000000221c0000)]
+  0x000000001f40c800 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=7296, stack(0x00000000213e0000,0x00000000214e0000)]
+  0x000000001f07a000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=736, stack(0x000000001f710000,0x000000001f810000)]
+  0x000000001f079800 JavaThread "AWT-Shutdown" [_thread_blocked, id=3376, stack(0x000000001f610000,0x000000001f710000)]
+  0x000000001f079000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=7332, stack(0x000000001f510000,0x000000001f610000)]
+  0x000000001dfe2800 JavaThread "Service Thread" daemon [_thread_blocked, id=760, stack(0x000000001e910000,0x000000001ea10000)]
+  0x000000001df5a800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=4848, stack(0x000000001e810000,0x000000001e910000)]
+=>0x000000001df4e800 JavaThread "C2 CompilerThread2" daemon [_thread_in_native, id=7484, stack(0x000000001e710000,0x000000001e810000)]
+  0x000000001df41000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=7452, stack(0x000000001e610000,0x000000001e710000)]
+  0x000000001df3f000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6556, stack(0x000000001e510000,0x000000001e610000)]
+  0x000000001df3d800 JavaThread "Attach Listener" daemon [_thread_blocked, id=8616, stack(0x000000001e410000,0x000000001e510000)]
+  0x000000001be3e800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=8012, stack(0x000000001e310000,0x000000001e410000)]
+  0x0000000002309800 JavaThread "Finalizer" daemon [_thread_blocked, id=8768, stack(0x000000001dd10000,0x000000001de10000)]
+  0x000000001be2d000 JavaThread "Reference Handler" daemon [_thread_blocked, id=8336, stack(0x000000001dc10000,0x000000001dd10000)]
+
+Other Threads:
+  0x000000001be28800 VMThread [stack: 0x000000001db10000,0x000000001dc10000] [id=7500]
+  0x000000001dff6800 WatcherThread [stack: 0x000000001ea10000,0x000000001eb10000] [id=1372]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 169984K, used 63208K [0x000000076ab00000, 0x0000000777800000, 0x00000007c0000000)
+  eden space 147456K, 28% used [0x000000076ab00000,0x000000076d4bdf40,0x0000000773b00000)
+  from space 22528K, 90% used [0x0000000776200000,0x00000007775fc298,0x0000000777800000)
+  to   space 31232K, 0% used [0x0000000773b00000,0x0000000773b00000,0x0000000775980000)
+ ParOldGen       total 173568K, used 51947K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 29% used [0x00000006c0000000,0x00000006c32baff8,0x00000006ca980000)
+ Metaspace       used 30286K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+
+Card table byte_map: [0x00000000116d0000,0x0000000011ee0000] byte_map_base: 0x000000000e0d0000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000574aa5b0
+ Begin Bits: [0x0000000012c40000, 0x0000000016c40000)
+ End Bits:   [0x0000000016c40000, 0x000000001ac40000)
+
+Polling page: 0x0000000001f90000
+
+CodeCache: size=245760Kb used=17516Kb max_used=18231Kb free=228243Kb
+ bounds [0x0000000002310000, 0x0000000003530000, 0x0000000011310000]
+ total_blobs=5671 nmethods=4727 adapters=854
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 139.425 Thread 0x000000001df3f000 nmethod 6131 0x0000000002984610 code [0x0000000002984800, 0x0000000002984d90]
+Event: 139.425 Thread 0x000000001df41000 nmethod 6133 0x0000000002f14210 code [0x0000000002f14380, 0x0000000002f14818]
+Event: 139.434 Thread 0x000000001df4e800 nmethod 6134 0x0000000002e9a690 code [0x0000000002e9a800, 0x0000000002e9ac98]
+Event: 139.518 Thread 0x000000001df3f000 6135       4       com.anylogic.engine.internal.presentation.a::n (76 bytes)
+Event: 139.526 Thread 0x000000001df41000 6136       4       com.anylogic.engine.internal.presentation.a::n (142 bytes)
+Event: 139.567 Thread 0x000000001df41000 nmethod 6136 0x000000000319a490 code [0x000000000319a760, 0x000000000319b920]
+Event: 139.597 Thread 0x000000001df3f000 nmethod 6135 0x0000000002d67190 code [0x0000000002d675a0, 0x0000000002d69038]
+Event: 140.581 Thread 0x000000001df5a800 6137       3       com.anylogic.engine.presentation.Shape3D::set3DElement_xjal (6 bytes)
+Event: 140.582 Thread 0x000000001df5a800 nmethod 6137 0x000000000259c990 code [0x000000000259cae0, 0x000000000259cc50]
+Event: 140.837 Thread 0x000000001df4e800 6138       4       com.anylogic.engine.presentation.ShapeControl::draw (18 bytes)
+
+GC Heap History (10 events):
+Event: 95.689 GC heap before
+{Heap before GC invocations=18 (full 2):
+ PSYoungGen      total 210432K, used 194985K [0x000000076ab00000, 0x000000077ae80000, 0x00000007c0000000)
+  eden space 173568K, 100% used [0x000000076ab00000,0x0000000775480000,0x0000000775480000)
+  from space 36864K, 58% used [0x0000000775480000,0x000000077696a468,0x0000000777880000)
+  to   space 35328K, 0% used [0x0000000778c00000,0x0000000778c00000,0x000000077ae80000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30253K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+Event: 95.712 GC heap after
+Heap after GC invocations=18 (full 2):
+ PSYoungGen      total 190464K, used 22402K [0x000000076ab00000, 0x000000077a200000, 0x00000007c0000000)
+  eden space 167936K, 0% used [0x000000076ab00000,0x000000076ab00000,0x0000000774f00000)
+  from space 22528K, 99% used [0x0000000778c00000,0x000000077a1e0808,0x000000077a200000)
+  to   space 34304K, 0% used [0x0000000775f00000,0x0000000775f00000,0x0000000778080000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30253K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+}
+Event: 103.993 GC heap before
+{Heap before GC invocations=19 (full 2):
+ PSYoungGen      total 190464K, used 190338K [0x000000076ab00000, 0x000000077a200000, 0x00000007c0000000)
+  eden space 167936K, 100% used [0x000000076ab00000,0x0000000774f00000,0x0000000774f00000)
+  from space 22528K, 99% used [0x0000000778c00000,0x000000077a1e0808,0x000000077a200000)
+  to   space 34304K, 0% used [0x0000000775f00000,0x0000000775f00000,0x0000000778080000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30267K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+Event: 104.002 GC heap after
+Heap after GC invocations=19 (full 2):
+ PSYoungGen      total 184832K, used 22525K [0x000000076ab00000, 0x0000000778c80000, 0x00000007c0000000)
+  eden space 162304K, 0% used [0x000000076ab00000,0x000000076ab00000,0x0000000774980000)
+  from space 22528K, 99% used [0x0000000775f00000,0x00000007774ff6a8,0x0000000777500000)
+  to   space 24064K, 0% used [0x0000000777500000,0x0000000777500000,0x0000000778c80000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30267K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+}
+Event: 111.326 GC heap before
+{Heap before GC invocations=20 (full 2):
+ PSYoungGen      total 184832K, used 184829K [0x000000076ab00000, 0x0000000778c80000, 0x00000007c0000000)
+  eden space 162304K, 100% used [0x000000076ab00000,0x0000000774980000,0x0000000774980000)
+  from space 22528K, 99% used [0x0000000775f00000,0x00000007774ff6a8,0x0000000777500000)
+  to   space 24064K, 0% used [0x0000000777500000,0x0000000777500000,0x0000000778c80000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30267K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+Event: 111.337 GC heap after
+Heap after GC invocations=20 (full 2):
+ PSYoungGen      total 180224K, used 22633K [0x000000076ab00000, 0x0000000778b80000, 0x00000007c0000000)
+  eden space 157184K, 0% used [0x000000076ab00000,0x000000076ab00000,0x0000000774480000)
+  from space 23040K, 98% used [0x0000000777500000,0x0000000778b1a570,0x0000000778b80000)
+  to   space 32768K, 0% used [0x0000000774b80000,0x0000000774b80000,0x0000000776b80000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30267K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+}
+Event: 123.426 GC heap before
+{Heap before GC invocations=21 (full 2):
+ PSYoungGen      total 180224K, used 179817K [0x000000076ab00000, 0x0000000778b80000, 0x00000007c0000000)
+  eden space 157184K, 100% used [0x000000076ab00000,0x0000000774480000,0x0000000774480000)
+  from space 23040K, 98% used [0x0000000777500000,0x0000000778b1a570,0x0000000778b80000)
+  to   space 32768K, 0% used [0x0000000774b80000,0x0000000774b80000,0x0000000776b80000)
+ ParOldGen       total 173568K, used 49358K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3033a70,0x00000006ca980000)
+ Metaspace       used 30282K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+Event: 123.445 GC heap after
+Heap after GC invocations=21 (full 2):
+ PSYoungGen      total 175104K, used 22834K [0x000000076ab00000, 0x0000000777e80000, 0x00000007c0000000)
+  eden space 152064K, 0% used [0x000000076ab00000,0x000000076ab00000,0x0000000773f80000)
+  from space 23040K, 99% used [0x0000000774b80000,0x00000007761ccb00,0x0000000776200000)
+  to   space 29184K, 0% used [0x0000000776200000,0x0000000776200000,0x0000000777e80000)
+ ParOldGen       total 173568K, used 49366K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3035a70,0x00000006ca980000)
+ Metaspace       used 30282K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+}
+Event: 137.673 GC heap before
+{Heap before GC invocations=22 (full 2):
+ PSYoungGen      total 175104K, used 174898K [0x000000076ab00000, 0x0000000777e80000, 0x00000007c0000000)
+  eden space 152064K, 100% used [0x000000076ab00000,0x0000000773f80000,0x0000000773f80000)
+  from space 23040K, 99% used [0x0000000774b80000,0x00000007761ccb00,0x0000000776200000)
+  to   space 29184K, 0% used [0x0000000776200000,0x0000000776200000,0x0000000777e80000)
+ ParOldGen       total 173568K, used 49366K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 28% used [0x00000006c0000000,0x00000006c3035a70,0x00000006ca980000)
+ Metaspace       used 30285K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+Event: 137.689 GC heap after
+Heap after GC invocations=22 (full 2):
+ PSYoungGen      total 169984K, used 20464K [0x000000076ab00000, 0x0000000777800000, 0x00000007c0000000)
+  eden space 147456K, 0% used [0x000000076ab00000,0x000000076ab00000,0x0000000773b00000)
+  from space 22528K, 90% used [0x0000000776200000,0x00000007775fc298,0x0000000777800000)
+  to   space 31232K, 0% used [0x0000000773b00000,0x0000000773b00000,0x0000000775980000)
+ ParOldGen       total 173568K, used 51947K [0x00000006c0000000, 0x00000006ca980000, 0x000000076ab00000)
+  object space 173568K, 29% used [0x00000006c0000000,0x00000006c32baff8,0x00000006ca980000)
+ Metaspace       used 30285K, capacity 30598K, committed 30848K, reserved 1075200K
+  class space    used 4134K, capacity 4210K, committed 4224K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 72.962 Thread 0x000000001f3fc800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000320a0a4 method=com.anylogic.engine.internal.presentation.a.n(Lcom/anylogic/engine/presentation/Panel;Ljava/awt/Graphics2D;Ljava/awt/geom/AffineTransform;DDDDDDDDDLcom/anylogic/engine/Presen|Iı…è=R@
+Event: 72.962 Thread 0x000000001f3fc800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002faad90 method=java.awt.geom.AffineTransform.transform([DI[DII)V @ 8
+Event: 72.967 Thread 0x0000000020dae800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000002f14770 method=java.util.Vector.indexOf(Ljava/lang/Object;I)I @ 51
+Event: 72.982 Thread 0x000000001f3fc800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000031742d4 method=sun.java2d.loops.RenderCache.get(Lsun/java2d/loops/SurfaceType;Lsun/java2d/loops/CompositeType;Lsun/java2d/loops/SurfaceType;)Ljava/lang/Object; @ 29
+Event: 73.079 Thread 0x0000000020bd5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000315cdc8 method=java.util.TimSort.countRunAndMakeAscending([Ljava/lang/Object;IILjava/util/Comparator;)I @ 95
+Event: 81.129 Thread 0x0000000020bd5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000314c89c method=org.j3d.aviatrix3d.pipeline.graphics.StateAndTransparencyDepthSortStage.sortNodes([Lorg/j3d/aviatrix3d/pipeline/graphics/GraphicsCullOutputDetails;ILorg/j3d/aviatrix3d/pipeliM¡S{T@
+Event: 81.927 Thread 0x000000001f40c800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000003448d40 method=java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V @ 18
+Event: 81.928 Thread 0x000000001f40c800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000003448d40 method=java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V @ 18
+Event: 81.929 Thread 0x000000001f40c800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000003448d40 method=java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V @ 18
+Event: 81.929 Thread 0x000000001f40c800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000000003448d40 method=java.awt.EventQueue.dispatchEventImpl(Ljava/awt/AWTEvent;Ljava/lang/Object;)V @ 18
+
+Internal exceptions (10 events):
+Event: 105.123 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076e43bf20) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.161 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076e470728) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.198 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076e750270) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.263 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076e787710) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.300 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076ecf5328) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.365 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076ed2c7c8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.403 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076f29a400) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.440 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076f2cec08) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.506 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076f3060a8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+Event: 105.572 Thread 0x0000000020bd5800 Exception <a 'java/lang/InterruptedException': sleep interrupted> (0x000000076f876950) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u66\4988\hotspot\src\share\vm\prims\jvm.cpp, line 3167]
+
+Events (10 events):
+Event: 121.147 Thread 0x000000001df5a800 flushing nmethod 0x0000000002ec8850
+Event: 121.149 Thread 0x000000001df5a800 flushing nmethod 0x00000000030ab090
+Event: 121.154 Thread 0x000000001df5a800 flushing nmethod 0x000000000315c510
+Event: 121.154 Thread 0x000000001df5a800 flushing nmethod 0x0000000003173dd0
+Event: 121.743 Thread 0x000000001df3f000 flushing nmethod 0x00000000032bfcd0
+Event: 121.743 Thread 0x000000001df3f000 flushing nmethod 0x00000000032c5250
+Event: 123.426 Executing VM operation: ParallelGCFailedAllocation
+Event: 123.446 Executing VM operation: ParallelGCFailedAllocation done
+Event: 137.673 Executing VM operation: ParallelGCFailedAllocation
+Event: 137.689 Executing VM operation: ParallelGCFailedAllocation done
+
+
+Dynamic libraries:
+0x00007ff6b1d00000 - 0x00007ff6b1d37000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\javaw.exe
+0x00007fff48ce0000 - 0x00007fff48e8d000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff483d0000 - 0x00007fff4850e000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007fff46210000 - 0x00007fff46325000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007fff449c0000 - 0x00007fff44a4e000 	C:\WINDOWS\system32\apphelp.dll
+0x00007fff2cb80000 - 0x00007fff2cbd3000 	C:\WINDOWS\AppPatch\AppPatch64\AcGenral.DLL
+0x00007fff48900000 - 0x00007fff489aa000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007fff46330000 - 0x00007fff4635e000 	C:\WINDOWS\system32\SspiCli.dll
+0x00007fff486f0000 - 0x00007fff48744000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007fff46870000 - 0x00007fff469e7000 	C:\WINDOWS\system32\USER32.dll
+0x00007fff48230000 - 0x00007fff483c4000 	C:\WINDOWS\system32\ole32.dll
+0x00007fff46d00000 - 0x00007fff48229000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007fff453c0000 - 0x00007fff453e1000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007fff469f0000 - 0x00007fff46a9a000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007fff3c700000 - 0x00007fff3c71e000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007fff46730000 - 0x00007fff46870000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007fff46aa0000 - 0x00007fff46af9000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007fff46500000 - 0x00007fff46712000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007fff48750000 - 0x00007fff4889b000 	C:\WINDOWS\system32\GDI32.dll
+0x00007fff45e00000 - 0x00007fff45e15000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007fff44370000 - 0x00007fff44422000 	C:\WINDOWS\SYSTEM32\SHCORE.dll
+0x00007fff464c0000 - 0x00007fff464f6000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007fff46360000 - 0x00007fff464b2000 	C:\WINDOWS\system32\MSCTF.dll
+0x00007fff43a60000 - 0x00007fff43cda000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_6240b9c7ecbd0bda\COMCTL32.dll
+0x0000000057fa0000 - 0x0000000058072000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\msvcr100.dll
+0x0000000056ca0000 - 0x0000000057529000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\server\jvm.dll
+0x00007fff385a0000 - 0x00007fff385a9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff41c80000 - 0x00007fff41ca2000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff41ea0000 - 0x00007fff41eaa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff489b0000 - 0x00007fff489b7000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007fff488a0000 - 0x00007fff488fa000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007fff419f0000 - 0x00007fff41a1a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007fff46c80000 - 0x00007fff46c89000 	C:\WINDOWS\system32\NSI.dll
+0x00007fff46160000 - 0x00007fff461af000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007fff44c40000 - 0x00007fff44c68000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x00000000582e0000 - 0x00000000582ef000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\verify.dll
+0x00000000582b0000 - 0x00000000582d9000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\java.dll
+0x0000000058290000 - 0x00000000582a6000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\zip.dll
+0x0000000058080000 - 0x0000000058218000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\awt.dll
+0x00007fff489f0000 - 0x00007fff48ab6000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x00007fff44aa0000 - 0x00007fff44bc9000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007fff44170000 - 0x00007fff44191000 	C:\WINDOWS\system32\dwmapi.dll
+0x00007fff44a90000 - 0x00007fff44a9b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fff45c70000 - 0x00007fff45c7b000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x00007fff45c00000 - 0x00007fff45c63000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x0000000057f50000 - 0x0000000057f97000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\fontmanager.dll
+0x0000000058270000 - 0x000000005828a000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\net.dll
+0x00007fff45630000 - 0x00007fff45689000 	C:\WINDOWS\system32\mswsock.dll
+0x0000000058250000 - 0x0000000058261000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\nio.dll
+0x0000000057f00000 - 0x0000000057f42000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\t2k.dll
+0x00007fff46b00000 - 0x00007fff46bb6000 	C:\WINDOWS\SYSTEM32\clbcatq.dll
+0x00007fff40840000 - 0x00007fff409ee000 	C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
+0x00007fff457c0000 - 0x00007fff457e0000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007fff45290000 - 0x00007fff452c6000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007fff458e0000 - 0x00007fff45906000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00000000584f0000 - 0x000000005851a000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\dcpr.dll
+0x000000001f880000 - 0x000000001f8da000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\org.j3d.opengl.swt.win32.x86_64_0.7.0\jogl.dll
+0x00007fff2c3d0000 - 0x00007fff2c4fb000 	C:\WINDOWS\SYSTEM32\OPENGL32.dll
+0x0000000057610000 - 0x00000000576d9000 	C:\WINDOWS\WinSxS\amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.8428_none_88dcdb0b2fb19957\MSVCR80.dll
+0x00007fff35780000 - 0x00007fff357ae000 	C:\WINDOWS\SYSTEM32\GLU32.dll
+0x00007fff2db40000 - 0x00007fff2dc38000 	C:\WINDOWS\SYSTEM32\DDRAW.dll
+0x00007fff40ee0000 - 0x00007fff40ee9000 	C:\WINDOWS\SYSTEM32\DCIMAN32.dll
+0x00007fff2a2a0000 - 0x00007fff2a2fb000 	C:\WINDOWS\SYSTEM32\nvoglshim64.dll
+0x0000000055070000 - 0x0000000056ca0000 	C:\WINDOWS\system32\nvoglv64.DLL
+0x00007fff48510000 - 0x00007fff486ea000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x00007fff461b0000 - 0x00007fff46201000 	C:\WINDOWS\system32\WINTRUST.dll
+0x00007fff45f80000 - 0x00007fff4615f000 	C:\WINDOWS\system32\CRYPT32.dll
+0x00007fff45eb0000 - 0x00007fff45ec1000 	C:\WINDOWS\system32\MSASN1.dll
+0x00007fff419b0000 - 0x00007fff419e2000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x00007fff45db0000 - 0x00007fff45df6000 	C:\WINDOWS\SYSTEM32\powrprof.dll
+0x0000000057ef0000 - 0x0000000057ef7000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\jawt.dll
+0x0000000022a00000 - 0x0000000022a08000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\org.j3d.opengl.swt.win32.x86_64_0.7.0\jogl_awt.dll
+0x00007fff33990000 - 0x00007fff346d2000 	C:\WINDOWS\system32\igd10iumd64.dll
+0x00007fff458b0000 - 0x00007fff458d5000 	C:\WINDOWS\SYSTEM32\ncrypt.dll
+0x00007fff45870000 - 0x00007fff458a7000 	C:\WINDOWS\SYSTEM32\NTASN1.dll
+0x00007fff40510000 - 0x00007fff4053a000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007fff404f0000 - 0x00007fff404fa000 	C:\WINDOWS\SYSTEM32\WINNSI.DLL
+0x00007fff40010000 - 0x00007fff40026000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x00007fff40180000 - 0x00007fff4019a000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x0000000057e40000 - 0x0000000057ee2000 	C:\Program Files\AnyLogic 7 Personal Learning Edition\jre\bin\mlib_image.dll
+0x00007fff42820000 - 0x00007fff42c61000 	C:\WINDOWS\SYSTEM32\igdusc64.dll
+
+VM Arguments:
+jvm_args: -Xmx4096m -DlanguageId_xjal=it0qb1bx -DFlowchartCountersVisible_xjal=true -DTileCachePath_xjal=C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.gis_7.3.7.201703161403\tiles -DFlowchartPortStateAnimated_xjal=true -DuseProxy_xjal=false -Djava.library.path=C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\org.j3d.opengl.swt.win32.x86_64_0.7.0;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\org.j3d.opengl.swt.win32.x86_64_0.7.0 -Dfile.encoding=Cp1252 
+java_command: com.anylogic.ms.MS java_supermarket_2.Simulation 17d588a
+java_class_path (initial): C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.engine_7.3.7.201703161403\com.anylogic.engine.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.engine_7.3.7.201703161403\com.anylogic.engine.al3d.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.engine_7.3.7.201703161403\com.anylogic.engine.resources.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.engine_7.3.7.201703161403\com.anylogic.engine.nl.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.optimizer_7.3.7.201703161403\lib\OptQuest.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.third_party_libraries_7.3.7.201703161403\lib\database\hsqldb.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.third_party_libraries_7.3.7.201703161403\lib\database\querydsl\querydsl-core-3.6.3.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.third_party_libraries_7.3.7.201703161403\lib\database\querydsl\querydsl-sql-3.6.3.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.third_party_libraries_7.3.7.201703161403\lib\database\querydsl\querydsl-sql-codegen-3.6.3.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.core_7.3.7.201703161403\com.anylogic.ms.jar;C:\Users\Vittorio\.AnyLogicPLE\Workspace7\ultimate_7_BUILD\classes;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.process_modeling_library_7.3.7.201703161403\lib\ProcessModelingLibrary.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.enterprise_library_7.3.7.201703161403\lib\EnterpriseLibrary.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.graphics3d_7.3.7.201703161403\lib\aviatrix3d-all_2.0.0.jar;C:\Program Files\AnyLogic 7 Personal Learning Edition\plugins\com.anylogic.graphics3d_7.3.7
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/AnyLogic 7 Personal Learning Edition/jre/bin/server;C:/Program Files/AnyLogic 7 Personal Learning Edition/jre/bin;C:/Program Files/AnyLogic 7 Personal Learning Edition/jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\AnyLogic 7 Personal Learning Edition;
+USERNAME=Vittorio
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 (6.3.9600.17415)
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8275648k(4465800k free), swap 33441472k(5052k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.66-b17) for windows-amd64 JRE (1.8.0_66-b17), built on Oct  6 2015 18:55:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Jul 08 13:24:38 2017
+elapsed time: 140 seconds (0d 0h 2m 20s)
+
